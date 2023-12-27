@@ -9,10 +9,6 @@ def quadratic_solution(a, b, c):
     else:
         return "Complex roots - No real solution"
 
-coefficient_sets = [(2, -6, 1), (1, 4, -6), (-1, 6, -4)]
-
-for coefficients in coefficient_sets:
-    a_set, b_set, c_set = coefficients
-    roots_set = quadratic_solution(a_set, b_set, c_set)
-    print(f"Set input roots: {roots_set}")
-
+a_single, b_single, c_single = 2, -6, 1
+roots_single = quadratic_solution(a_single, b_single, c_single)
+print(f"single set input roots: {roots_single}")
